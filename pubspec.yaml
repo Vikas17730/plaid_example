@@ -1,0 +1,29 @@
+name: plaid_link
+version: 0.0.4
+homepage: https://github.com/firelab-app/plaid_link
+repository: https://github.com/firelab-app/plaid_link
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  js: ^0.6.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: app.firelab.plaid_link
+        pluginClass: PlaidLinkPlugin
+      web:
+        pluginClass: PlaidLinkPlugin
+        fileName: plaid_link_web.dart
